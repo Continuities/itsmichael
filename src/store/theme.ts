@@ -27,6 +27,7 @@ export type ElementTypography = Readonly<{
 export type Typography = Readonly<{
   h1: ElementTypography,
   h2: ElementTypography,
+  h3: ElementTypography,
   subtitle: ElementTypography,
   body1: ElementTypography,
   body2: ElementTypography,
@@ -124,6 +125,11 @@ const themes: { [index: string]: Theme } = {
       },
       h2: {
         fontSize: [1.5, 1.5, 1.5, 1.5, 3],
+        lineHeight: 1.8,
+        letterSpacing: 0.3
+      },
+      h3: {
+        fontSize: [1, 1, 1.2, 1.2, 1.5],
         lineHeight: 1.8,
         letterSpacing: 0.3
       },
